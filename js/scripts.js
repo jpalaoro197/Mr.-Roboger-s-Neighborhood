@@ -13,3 +13,12 @@ function beepBoop(inputNumber) {
     }
   return outputNumber;
 }
+
+$(document).ready(function(){
+  $("form#talk").submit(function(){
+    event.preventDefault();
+    const number = parseInt($("#number").val());
+    const result = beepBoop(number)
+    $("#output").text(result); 
+  })
+})
