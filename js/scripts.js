@@ -4,6 +4,9 @@ function beepBoop(inputNumber) {
   let outputString;
   for (let i1 = 0; i1 <= inputNumber; i1 +=1) {
     outputString = i1.toString();
+    for (let i2 = 3; i2 > 0; i2--) {
+      
+    }
     
     }
   }
