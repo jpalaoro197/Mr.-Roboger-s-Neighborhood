@@ -4,6 +4,8 @@ function beepBoop(inputNumber) {
 
     if (i.toString().includes(3)) {
       outputNumber.push("won't you be my neighbor?");
+    } else if (i.toString().includes(2)) {
+      outputNumber.push("boop")
     } else {
       outputNumber.push(i)
     }
