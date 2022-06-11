@@ -1,8 +1,15 @@
 function beepBoop(inputNumber) {
   let outputNumber = [];
-  for (let i1 = 0; i1 <= inputNumber; i1 +=1) {
+  for (let i = 0; i <= inputNumber; i +=1) {
 
-  }
+    if (i.toString().includes(3)) {
+      outputNumber.push("won't you be my neighbor?");
+    } else {
+      outputNumber.push(i)
+    }
+  };
+  return outputNumber;
+};
 
 
 $(document).ready(function(){
