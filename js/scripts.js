@@ -18,10 +18,9 @@ function beepBoop(inputNumber) {
 
 //user
 $(document).ready(function(){
-  $("form#talk").submit(function(){
+  $("form#talk").submit(function(event){
     event.preventDefault();
     const number = parseInt($("#number").val());
-    const result = beepBoop(number)
-    $("#output").text(result); 
+    $("#output").text(beepBoop(number)); 
   })
 })
