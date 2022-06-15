@@ -6,11 +6,11 @@ function beepBoop(inputNumber) {
     if (i.toString().includes(3)) {
       outputNumber.push("won't you be my neighbor?");
     } else if (i.toString().includes(2)) {
-      outputNumber.push("boop")
+      outputNumber.push("boop");
     } else if (i.toString().includes(1)) {
-      outputNumber.push("beep")
+      outputNumber.push("beep");
     } else {
-      outputNumber.push(i)
+      outputNumber.push(i);
     }
   };
   return outputNumber;
@@ -22,5 +22,5 @@ $(document).ready(function(){
     event.preventDefault();
     const number = parseInt($("#number").val());
     $("#output").text(beepBoop(number)); 
-  })
-})
+  });
+});
